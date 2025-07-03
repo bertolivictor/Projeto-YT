@@ -1,6 +1,6 @@
 @import url(./assets/reset.css);
 body {
-    width: 100vw;
+    width: 99.2vw;
     height: 100vh;
     background-color: #eeeeee;
     font-family: "roboto", sans-serif;
@@ -57,35 +57,30 @@ header {
     cursor: pointer;
 }
 main {
-    height: 95vh;
+    height: 100vh;
     display: flex;
-    
+    padding-bottom: 40px;
     background-color: #eeeeee;
 }
 .main-conteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70vw;
-    padding: 20px 200px;
-    gap: 20px;
-}
-.right-conteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0 40px;
+    width: 80vw;
+    padding: 20px 20px;
     gap: 20px;
 }
 .left-conteiner {
     display: flex;
-    width: 65vh;
-    background-color: cadetblue;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px;
+    gap: 20px;
 }
 .video-content iframe {
-    width: 950px;
-    height: 500px;
+    width: 1080px;
+    height: 607px;
     border-radius: 10px;
 }
 .video-title {
@@ -94,7 +89,7 @@ main {
 }
 .content-info {
     display: flex;
-    gap: 0 30px;
+    gap: 0 75px;
 }
 #channel-data {
     display: flex;
@@ -139,11 +134,46 @@ main {
 }
 .content-descr {
     background-color: #ffffff;
-    width: 96%;
+    width: 1040px;
     min-height: 100px;
     border-radius: 5px;
     padding: 20px;
     white-space: wrap;
     font-weight: 250;
     text-wrap: wrap;
+}
+.right-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    width: 40vh;
+    gap: 20px;
+    background-color: #eeeeee;
+}
+.video-suj {
+    display: flex;
+    flex-direction: row;
+}
+.video-suj iframe {
+    width: 160px;
+    height: 90px;
+}
+.suj-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+.suj-desc h1 {
+    font-weight: 600;
+}
+.suj-desc p {
+    font-weight: 200;
+    font-size: smaller;
+}
+#suj-channel {
+    font-weight: 400;
+    font-size: small;
 }
