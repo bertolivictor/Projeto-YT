@@ -57,18 +57,26 @@ header {
     cursor: pointer;
 }
 main {
-    height:95vh;
+    height: 95vh;
     display: flex;
+    
     background-color: #eeeeee;
 }
 .main-conteiner {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
+    width: 70vw;
     padding: 20px 200px;
     gap: 20px;
-    width: 70vw;
+}
+.right-conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 40px;
+    gap: 20px;
 }
 .left-conteiner {
     display: flex;
@@ -78,6 +86,7 @@ main {
 .video-content iframe {
     width: 950px;
     height: 500px;
+    border-radius: 10px;
 }
 .video-title {
     font-size: x-large;
@@ -102,10 +111,11 @@ main {
 #subscribe-button {
     background-color: #CC0000;
     color: #ffffff;
-    width: 160px;
+    width: 120px;
+    font-size: small;
     align-self: center;
     text-align: center;
-    font-weight: bold;
+    letter-spacing: 2px;
     padding: 10px 10px;
     margin-left: 50px;
     text-transform: uppercase;
@@ -129,7 +139,7 @@ main {
 }
 .content-descr {
     background-color: #ffffff;
-    width: 88%;
+    width: 96%;
     min-height: 100px;
     border-radius: 5px;
     padding: 20px;
